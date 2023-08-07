@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">colhedeira</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">tratores</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">plantaforma</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">butinas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">chapeu</a>
+                </li>
+            </ul>
+            <img src="img/download.jpeg" alt="John deere" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">John Deere</b></h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu">
+                <li class="opções__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link"></a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">colhedeira</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">tratores</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">chapeu</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">camisetas</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa pagina os seus implementos agricola!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua nova maquina?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos 2023</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/download.jpeg"
+                        alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="img/o1600120013708795714.jpg"
+                        alt="Livro sobre liderança em design da alura books"></div>
+                <div class="swiper-slide"><img src="img/r4f105707_rrd_tratores_serie_9r_maior_trator_articulado_gradeando_large_e2a5954bf051879aedfe79fd8c6861d4b338c22b.avif"
+                        alt="Livro sobre javascript assertivo da alurabooks"></div>
+                <div class="swiper-slide"><img src="img/escavadeira_210g_estudio_1_large_53f16d6b1d51266091784023dab0d69eaff3642b.avif" alt="Livro Guia front end"></div>
+                <div class="swiper-slide"><img src="img/d9454f8cb3f28700e4ad8dbdc5947ec0.jpeg" alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="img/r4g078829-tractor-9rx-1366x768px.avif" alt="livro sobre acessibilidade"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Talvez você também poderar gostar deste modelo...</h3>
+                    <h2 class="descrição__titulo-livro">colhedeira x9</h2>
+                    <p class="descrição__texto">CES 2021: Colheitadeira Série X da John Deere vence categoria Robótica.</p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/colheitadeira-série-1024x591.jpg" class="descrição__imagem">
+            </div>
+
+            <!-- 2º linha -->
+            <div class="card__botões">
+                <!-- 1º coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2º coluna -->
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/r3c006484_NK_pulverizador_m4040_foto_campo_de_noite_large_f7184bcbe6502542c8ccad59ae09d4f34bcf6aab.avif"
+                        alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="img/r3c006201_NK_plantadeira_db_exactemerge_large_9974775c4262ac2898f8c91a2766b1a275a2e225.webp"
+                        alt="Livro sobre liderança em design da alura books"></div>
+                <div class="swiper-slide"><img src="img/c0c3fe60b76a6d8a0cef105c7e77ce4cd676801b.jpg"
+                        alt="Livro sobre javascript assertivo da alurabooks"></div>
+                <div class="swiper-slide"><img src="img/pa_carregadeira_524k_ii_estudio_1_large_b57602875db7ba3a2b22943cff7c0b2a938bfd3e.avif" alt="Livro Guia front end"></div>
+                <div class="swiper-slide"><img src="img/r4f080304_rrd_cp770_harvesting_cotton_night_450x300.jpg" alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="img/colhedora_cana_ch570_campo_large_5d61d1f5352cde012b9e2fd3803852785fa1c820.webp" alt="livro sobre acessibilidade"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <img src="img/trator_7230j_estudio_large_3d649f133c714126cc73e6817cae9aded7be94c1.webp" alt="Avaliação 5 estrelas">
+                    <h3 class="descrição__titulo">trator do Mês</h3>
+                    <h2 class="descrição__titulo">john deere apresenta </h2>
+                    <p class="descrição__texto">novas motoniveladores Série EVO na Agrishow 2022.
+                    </p>
+                </div>
+                <!-- 2º coluna -->
+            </div>
+
+            <!-- 2º linha -->
+            <div class="card__botões">
+                <!-- 1º coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2º coluna -->
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>   <
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
